@@ -24,12 +24,10 @@ video_downloader/
 │
 ├── utils/                   # Utilities (shared functions)
 │   ├── logger.py            # Logging setup
-│   ├── response.py          # JSON helpers for success/error
-│   └── file_cleanup.py      # Script to delete old files
+│   └── response.py          # JSON helpers for success/error
 │
 ├── modules/                 # Feature-specific downloaders
-│   ├── yt_downloader.py     # Handles YouTube/Facebook/Instagram downloads
-│   └── insta_downloader.py  # For future use
+│   └── yt_downloader.py     # Handles YouTube/Facebook/Instagram downloads
 │
 └── cron/                    # Scheduled job scripts
     └── daily_cleanup.py     # Deletes folders older than 1 day
@@ -62,7 +60,7 @@ python app.py
 
 ## 🧹 Cleanup Recommendation
 
-Use the `file_cleanup.py` script to auto-delete files older than 1 day. You can also schedule `cron/daily_cleanup.py` via a cron job.
+Use the `daily_cleanup.py` script to auto-delete files older than 1 day. You need to schedule `cron/daily_cleanup.py` via a cron job.
 
 ---
 
