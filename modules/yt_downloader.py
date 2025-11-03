@@ -10,7 +10,7 @@ logger = setup_logger()
 
 @app.route('/')
 def home():
-    return success_response(message="Video Downloader API is running 🚀")
+    return success_response(message="Video Downloader API is running")
 
 @app.route('/download', methods=['POST'])
 def download():
